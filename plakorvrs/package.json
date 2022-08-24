@@ -12,6 +12,7 @@
     "react-bootstrap": "^2.5.0",
     "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
+    "react-js-pagination": "^3.0.3",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-scroll-to-top": "^3.0.0",
@@ -46,5 +47,5 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
-  "homepage": "/"
+  "homepage": "https://yunsangCho.github.io/plakorvrs_server/"
 }

@@ -35,7 +35,23 @@ app.post('/register', (req,res)=>{
     res.json({OUT_MSG : "SUCCESS"})
 });
 
+app.post('/search', (req, res) => {
+
+
+    var param = req.body;
+    var today = new Date();
+
+    console.log(param);
+
+    db.collection('reservation').find(param).sort({'_id' : -1}).toArray((error, result)=>{
+        if(error) {res.json({"returnData" : "error"}); return;}
+        if(result.length == 0) {res.json({"returnData" : "X"}); return;}
+        res.json({"returnData" : result})
+    })
+    
+    
+});
+
 app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, '/plakorvrs/build/index.html'));
 });
-
