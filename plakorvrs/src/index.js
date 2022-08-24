@@ -8,10 +8,7 @@ import ScrollToTop from "./components/common/ScrollToTop";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  //실서비스 호스팅
-  // <BrowserRouter basename={process.env.PUBLIC_URL}>
-  //깃허브 호스팅
-  <BrowserRouter> 
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <ScrollToTop/>
     <App />
   </BrowserRouter>
