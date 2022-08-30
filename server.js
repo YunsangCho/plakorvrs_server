@@ -16,8 +16,8 @@ MongoClient.connect('mongodb+srv://plakor:!q2w3e4r@cluster0.dnh1o.mongodb.net/pl
   if (error) return console.log(error);
   db = client.db('plakorvrs');
 
-  app.listen('8080', function(){
-    console.log('WebServer listening on 8080');
+  app.listen('8800', function(){
+    console.log('WebServer listening on 8800');
   });
 });
 

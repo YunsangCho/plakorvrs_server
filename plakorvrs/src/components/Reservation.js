@@ -95,20 +95,18 @@ const Reservation = (props) => {
               <div className="privacy-content">
                 <dl>
                   <dt>◆ 보안정책 ◆</dt>
-                  <dd><input type="checkbox"/> 지정된 장소 외 출입 및 개별 행동 금지(안내자와 상시 동행) ~~</dd>
-                  <dd><input type="checkbox"/> 사진 촬영 및 음성 녹음 금지 ~~</dd>
-                  <dd><input type="checkbox"/> 사전 허가된 인원과 장비만 출입 및 반입 ~~</dd>
-                  <dd><input type="checkbox"/> 출입 시 사전 ~~</dd>
-                  <dd><input type="checkbox"/> 기타 방문사업장의 정문 보안통제에 적극 협조 ~~</dd>
-                  <dd><input type="checkbox"/> 신청자 주관으로 방문 동행인 대상 상기 보안정책 교육 및 전파 ~~</dd>
-                  {/* <dd className="ess">※ 보안정책 위반시 강제 퇴거 및 사안에 따라 법적 조치를 취할 수 있습니다.</dd> */}
+                  <dd>＊ 지정된 장소 외 출입 및 개별 행동 금지(안내자와 상시 동행)</dd>
+                  <dd>＊ 사진 촬영 및 음성 녹음 금지 </dd>
+                  <dd>＊ 사전 허가된 인원과 장비만 출입 및 반입 </dd>
+                  <dd>＊ 기타 방문사업장의 정문 보안통제에 적극 협조 </dd>
+                  <dd>＊ 신청자 주관으로 방문 동행인 대상 상기 보안정책 교육 및 전파 </dd>
                 </dl>
               </div>
             </div>
           </div>
           <div className="form-check float-end">
             <input type="checkbox" className="form-check-input" id="exampleCheck2" checked={soCheck} onClick={()=>{setSoCheck(!soCheck)}}/>
-            <label className="form-check-label" htmlFor="exampleCheck2">상기 보안정책 준수사항에 동의합니다.</label>
+            <label className="form-check-label" htmlFor="exampleCheck2">상기 보안정책 준수사항에 모두 동의합니다.</label>
           </div>
         </div>
   

@@ -47,5 +47,7 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
-  "homepage": "https://yunsangCho.github.io/plakorvrs_server/"
+  "_____________깃허브 호스팅 homepage_________________": "https://yunsangCho.github.io/plakorvrs_server/",
+  "_____________실서비스 homepage______________________": "/",
+  "homepage": "/"
 }

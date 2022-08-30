@@ -20,7 +20,11 @@ const Search = (props) => {
                 <div className="text-center mb-5">
                     <div className="feature bg-dark bg-gradient text-white rounded-3 mb-3"><i className="bi bi-search"></i></div>
                     <h2 className="fw-bolder">신청현황 조회</h2>
+                    {
+                    resultFlag == false ? 
                     <p className="lead fw-normal text-muted mb-0" style={{fontSize: "16.5px"}}>접수 시 입력하신 성함과 연락처를 입력해주세요</p>
+                    : null
+                    }
                 </div>
                 {
                 resultFlag == false ? 
@@ -44,13 +48,24 @@ const Search = (props) => {
                           </div> 
                           <Button variant="dark" size="lg" style={{width: "100%"}} onClick={(e) => {
                             var visitorTelStr = "010-" + tel1 + "-" + tel2;
+                            if(visitorTelStr.length != 13) {
+                              alert("연락처가 올바르지 않습니다.");
+                              return;
+                            }
+                            if(!visitorName){
+                              alert("신청자명을 입력해주세요");
+                              return;
+                            }
                             var param = { visitorName, visitorTelStr}
                             axios.post("/search", param)
                             .then((res)=>{
                               var returnData = res.data.returnData;
-                              if(returnData != "X") setResultFlag(true);
-                              setResultData(returnData);
-                              console.log(returnData);
+                              if(returnData != "X"){
+                                setResultFlag(true);
+                                setResultData(returnData);
+                              }else{
+                                alert("조회결과가 존재하지 않습니다.");
+                              }
                             })
                             .catch((error)=>{
                               alert("error");

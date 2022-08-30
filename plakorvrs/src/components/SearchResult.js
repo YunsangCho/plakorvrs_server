@@ -35,6 +35,12 @@ const SearchResult = (props) => {
                 </thead>
                 <tbody>
                   { currentPosts.map((e, i)=>{
+                    var approvalDateStr = "-";
+
+                    if(e.approvalDate){
+                      approvalDateStr = e.approvalDate;
+                    }
+
                     return (
                     <tr>
                       <td>{e.visitorName}</td>
@@ -43,7 +49,7 @@ const SearchResult = (props) => {
                       <td>{e.visitDateStr + " " + e.startTimeStr + "~" + e.endTimeStr}</td>
                       <td>{e.registerDate.substring(0, 10)}</td>
                       <td>{e.registerState}</td>
-                      <td>{e?.approvalDate}</td>
+                      <td>{approvalDateStr}</td>
                     </tr>
                     )
                   })

@@ -7516,7 +7516,7 @@ textarea.form-control-lg {
 
 .py-custom1{
   padding-top: 3rem !important;
-  padding-bottom: 12rem !important;
+  padding-bottom: 3rem !important;
 }
 
 .pt-0 {
@@ -11340,7 +11340,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .customField1 + .react-datepicker-wrapper{
-  width: 85%;
+  width: 80%;
 }
 
 .ess{
