@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/plakorvrs_server/static/css/main.13b8b617.css",
-    "main.js": "/plakorvrs_server/static/js/main.dfdfc9ad.js",
-    "static/js/787.cc85c486.chunk.js": "/plakorvrs_server/static/js/787.cc85c486.chunk.js",
-    "index.html": "/plakorvrs_server/index.html",
-    "main.13b8b617.css.map": "/plakorvrs_server/static/css/main.13b8b617.css.map",
-    "main.dfdfc9ad.js.map": "/plakorvrs_server/static/js/main.dfdfc9ad.js.map",
-    "787.cc85c486.chunk.js.map": "/plakorvrs_server/static/js/787.cc85c486.chunk.js.map"
+    "main.css": "/static/css/main.13b8b617.css",
+    "main.js": "/static/js/main.5d5fd7dd.js",
+    "static/js/787.cc85c486.chunk.js": "/static/js/787.cc85c486.chunk.js",
+    "index.html": "/index.html",
+    "main.13b8b617.css.map": "/static/css/main.13b8b617.css.map",
+    "main.5d5fd7dd.js.map": "/static/js/main.5d5fd7dd.js.map",
+    "787.cc85c486.chunk.js.map": "/static/js/787.cc85c486.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.13b8b617.css",
-    "static/js/main.dfdfc9ad.js"
+    "static/js/main.5d5fd7dd.js"
   ]
 }
